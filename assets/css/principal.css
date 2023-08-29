@@ -552,8 +552,8 @@ body{
 }
 
 .footer{
-    /* background-color: rgba(0, 0, 0, 0.4); */
-    background-color: rgb(212, 173, 173);
+    background-color: white; 
+    /* background-color: rgb(212, 173, 173); */
 }
 
 .contenue h3{
