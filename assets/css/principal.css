@@ -1,0 +1,587 @@
+
+
+*{
+    margin: 0;
+    padding: 0; 
+    list-style: none; 
+    /* overflow: hidden; */
+}
+
+header{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../images/mario-la-pergola-Wrx0iVcYKmM-unsplash.jpg);
+    background-size: cover;
+    animation: name 50s infinite;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    
+}
+
+@keyframes name {
+    25%{ 
+        /* background-image: url(images/Ismo.jpeg); */
+    /* }
+    50%{ */
+        /* background-image: url(images/magic\ system.jpeg); */
+    /* }
+    75%{ */
+        /* background-image: url(images/alpha.jpeg); */
+     }
+    100%{
+        background-image: url(../images/drum-set-1839383_1280.jpg);
+    }
+    
+}  
+
+nav .logo-conten img{
+    height: 30px;
+    width: 250px;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    
+}
+nav input{
+    
+    height: 30px;
+    width: 300px;
+    border-radius: 5px;
+    border: none;
+    padding-left: 20px;
+    background-color: rgba(238, 235, 235, 0.781);
+    color: white;
+}
+
+nav{
+   width: 100%;
+   height: 80px;
+   background-color: rgba(0, 0, 0, 0); 
+   display: flex;
+   align-items: center;
+   position: fixed;
+   z-index: 1;
+}
+nav .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .nav-lien ul{
+    display: flex;
+    align-items: center;
+    height: 80px;
+    margin-right: 10px;
+}
+
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+nav .nav-lien{
+    display: flex;
+}
+
+nav .nav-lien a{
+    
+    justify-content: space-between;
+    height: 100%;
+    text-decoration: none;
+    color: white;
+    font-family: sans-serif;
+    font-size: .6rem;
+    padding-left: 10px;
+}
+ 
+nav a:hover{
+    background: green;
+}
+
+label{
+    display: none;
+    
+    color: white;
+}
+@media all and (max-width:991px){
+    nav{
+        height: 60px;
+    }
+    .navbar .nav-lien {
+        display: none;
+    }
+    label{
+        width: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        font-size: 40px;
+        cursor: pointer;
+    }
+}
+
+label, #toggle{
+    display: none;
+}
+
+@media all and (max-width: 991px){
+    nav{
+        height: 60px;
+    }
+}
+.navbar .nav-lien{
+    display: none;
+    flex-direction: column;
+    height: 80px;
+}
+
+nav .nav-lien a {
+    width: 100%;
+    
+}
+label{
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+
+#toggle:checked + .navbar .nav-lien{
+    display: flex;
+}
+
+@media (max-width: 571px){
+    nav input{
+    
+        height: 30px;
+        width: 300px;
+        border-radius: 5px;
+        border: none;
+        padding-left: 20px;
+        background-color: rgba(238, 235, 235, 0.781);
+        
+    }
+    nav .logo-conten img{
+        height: 30px;
+        width: 250px;
+        margin-bottom: 20px;
+        justify-content: center;
+        text-align: center;
+        display: flex;
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 700px){
+    header h1{
+        font-size: 2rem;
+        
+    }
+} 
+
+header h1{
+    text-align: center;
+    color: white;
+    font-size: 6rem;
+    font-family:sans-serif;
+    margin-top: 200px;
+    animation: titr 10s infinite;
+} 
+
+/* @keyframes titr {
+    0%{
+        transform: translate(1000px);
+    }
+    40%{
+        transform: translate(0px);
+        transform: scale(10);
+    }
+} */
+
+
+ /* BODY */
+body{
+    background-color: rgba(15, 15, 15, 0.925) ;
+}
+body{
+    overflow-x: hidden;
+ }
+
+/* playlist*/
+.titre-content .titre-play{
+    text-align: center;
+    
+    
+}
+
+.playlist{
+     background-color: rgba(15, 15, 15, 0.925) 
+    /* background-image: url(images/mario-la-pergola-Wrx0iVcYKmM-unsplash.jpg); */
+    
+}
+
+ .play1{
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+    max-width: 1300px;
+    grid-template-columns: repeat(5, 1fr);
+    flex-wrap: wrap;
+    overflow: hidden;
+    justify-content: center;
+    /* background-color: black; */ 
+ }
+
+ .play1 video{
+    width: 240px;
+    margin: 10px;
+    border-radius: 15px;
+ }
+
+ 
+ /* bubliotheque */
+
+ /* BIBLIOTHEQUE 1 */
+
+.bubliotheque .bbl .titre1{
+    margin-top: 50px;
+    text-align: center;
+    color: white;
+    
+}
+
+.bubliotheque{
+    /* background-color: rgb(219, 48, 48); */
+}
+
+ .biblio1{
+    margin: 0 auto;
+ }
+
+ .biblio1{
+    
+    display: flex;
+    width: 100%;
+    max-width: 1300px;
+    grid-template-columns: repeat(5, 1fr);
+    flex-wrap: wrap;
+    overflow: hidden;
+    justify-content: center;
+ }
+ .biblio1 video{
+    width: 240px;
+    margin: 10px;
+    border-radius: 15px;
+    margin-top: 50px;
+ }
+
+ /* BIBLIOTHEQUE 2 */
+ .bubliotheque .bbl1 .titre2{
+    text-align: center;
+    margin: 50px;
+    color: white;
+ }
+
+ .biblio2{
+    margin: 0 auto;
+ }
+
+ .biblio2{
+    display: flex;
+    width: 100%;
+    max-width: 1300px;
+    grid-template-columns: repeat(5, 1fr);
+    flex-wrap: wrap;
+    overflow: hidden;
+    justify-content: center;
+ }
+
+ .biblio2 video{
+    width: 240px;
+    margin: 10px;
+    border-radius: 15px;
+    
+ }
+
+/* BIBLOTHEQUE 3 */
+
+ .bubliotheque .bbl2 .titre3{
+    text-align: center;
+    margin: 50px;
+    color: white;
+ }
+
+ .biblio3{
+    margin: 0 auto;
+ }
+
+ .biblio3{
+    display: flex;
+    width: 100%;
+    max-width: 1300px;
+    grid-template-columns: repeat(5, 1fr);
+    flex-wrap: wrap;
+    overflow: hidden;
+    justify-content: center;
+ }
+
+ .biblio3 video{
+    width: 240px;
+    margin: 10px;
+    border-radius: 15px;
+ }
+
+
+/* BIBLIOTHEUQE 4 */
+
+.bubliotheque .bbl3 .titre4{
+    text-align: center;
+    margin: 50px;
+    color: white;
+ }
+
+.biblio4{
+    margin: 0 auto;
+ }
+
+ .biblio4{
+    display: flex;
+    width: 100%;
+    max-width: 1300px;
+    grid-template-columns: repeat(5, 1fr);
+    flex-wrap: wrap;
+    overflow: hidden;
+    justify-content: center;
+ }
+
+ .biblio4 video{
+    width: 240px;
+    margin: 10px;
+    border-radius: 15px;
+ }
+ .biblio4{
+    transition: transform;
+ }
+
+/*  NOS FORMULES*/
+
+.form{
+    
+    background-color: rgb(7, 7, 7);
+} 
+.ell{
+    margin: 0 auto;
+}
+
+.ell{
+    width: 100%;
+    display:flex;
+    align-items: center;
+    max-width: 1300px;
+    grid-template-columns: repeat(3, 1fr);
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: hidden;
+}
+.elem h1{
+
+    font-family: sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.form .ell .cards{
+    width: 300px;
+    height: 450px;
+    background-color: white;
+    margin: 10px;
+    margin-top: 50px;
+}
+.form .ell h3{
+    margin-top: 15px;
+    font-family: sans-serif;
+    text-align: center;
+}
+.form .ell p{
+    margin-top: 20px;
+    font-family: sans-serif;
+    color: rgb(82, 77, 77);
+    font-size: 13px;
+    text-align: center;
+}
+.form .ell .elem1 img{
+    height: 20px;
+    width: 20px;
+} 
+
+.pucc{
+    display: inline-block;
+    margin-top: 20px;
+}
+.blocIco{
+    display: flex;
+}
+ 
+.blocIco img{
+  margin: 20px;  
+ 
+}
+
+.form .ell .elem1 .jour1{
+    margin: 0 auto;
+    height: 40px;
+    width: 200px;
+    background-color: rgb(8, 8, 8);
+    text-align: center; 
+    margin-top: 90px;
+    
+}
+
+.form .ell .elem1 .j1{
+    color: white;
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+.form .ell .elem1 .j1:hover{
+    color: rgba(105, 104, 104, 0.603);
+}
+
+/* prochaine formule */
+
+.form .ell .elem2 img{
+    height: 20px;
+    width: 20px;
+    
+} 
+.pucc{
+    display: inline-block;
+    margin-top: 20px;
+}
+.blocIco{
+    display: flex;
+    justify-content: space-between;
+}
+ 
+.blocIco img{
+  margin: 20px;  
+}
+
+.form .ell .elem2 .jour2{
+    margin: 0 auto;
+    height: 40px;
+    width: 200px;
+    background-color: rgb(12, 11, 11);
+    text-align: center;
+    margin-top: 90px;
+}
+
+.form .ell .elem2 .j2{
+    color: white;
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+.form .ell .elem2 .j2:hover{
+    color: rgba(105, 104, 104, 0.603);
+}
+
+/* troisieme div
+ */
+
+ .form .ell .elem3 img{
+    height: 20px;
+    width: 20px;
+    
+} 
+.pucc{
+    display: inline-block;
+    margin-top: 20px;
+}
+.blocIco{
+    display: flex;
+    justify-content: space-between;
+}
+ 
+.form .ell .elem3 .jour3{
+    margin: 0 auto;
+    height: 40px;
+    width: 200px;
+     background-color: rgb(12, 11, 11); 
+    text-align: center;
+    margin-top: 30px;
+}
+
+.form .ell .elem3 .j3{
+    color: white;
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+
+.form .ell .elem3 .j3:hover{
+    color: rgba(105, 104, 104, 0.603);
+}
+
+
+/* FOOTER */  
+
+.contenue{
+    margin: 0 auto;
+}
+
+.contenue{
+    
+
+    display: flex;
+    width: 100%;
+    max-width: 1300px;
+    height: 140px; 
+    grid-template-columns: repeat(3, 1fr);
+    flex-wrap: wrap;
+    overflow: hidden; 
+    text-align: center;
+    margin-bottom: 100px;
+    justify-content: space-between;
+}
+
+.footer{
+    /* background-color: rgba(0, 0, 0, 0.4); */
+    background-color: rgb(212, 173, 173);
+}
+
+.contenue h3{
+    font-size: 1rem;
+    font-family: sans-serif;
+    width: 350px;
+    color: rgb(7, 7, 7); 
+    margin-top: 50px;
+    
+}
+.contenue .reseau img{
+    height: 20px;
+    width: 20px;
+    margin: 10px;
+    margin-top: 10px; 
+}
+
+.contenue .paiement img{
+    height: 20px;
+    width: 20px;
+    margin: 10px;
+    margin-top: 10px;
+    
+}
+
+.fin{
+    text-align: center;
+    justify-content: center;
+    font-family: sans-serif;
+    /* margin-top: -90px; */
+}
