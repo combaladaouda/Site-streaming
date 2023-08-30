@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+}
+
+
+.content{
+    margin: 0 auto;
+    background-color: green;
+    width: 350px;
+    height: 400px;
+    margin-top: 50px;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    
+}
+
+ 
+img{
+    height: 100px;
+    width: 100px;
+}
+
+.information img{
+    height: 25px;
+    width: 25px;
+    display: flex;
+
+}
+
+.information{
+    
+    flex-direction: column;
+}

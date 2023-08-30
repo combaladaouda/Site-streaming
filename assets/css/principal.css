@@ -191,18 +191,18 @@ header h1{
     font-size: 6rem;
     font-family:sans-serif;
     margin-top: 200px;
-    animation: titr 10s infinite;
+    animation: titr 50s infinite;
 } 
 
 /* @keyframes titr {
     0%{
         transform: translate(1000px);
     }
-    40%{
+    50%{
         transform: translate(0px);
         transform: scale(10);
     }
-} */
+}  */
 
 
  /* BODY */
